@@ -16,15 +16,6 @@ body {
   font-weight: 400;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  margin-top: 20px;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 .qr-container {
   display: flex;
   flex-direction: column;
