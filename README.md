@@ -1,3 +1,5 @@
-# frontendmentor
+# FRONTEND MENTOR
+
+These are my projects done from Frontend Mentor
 
 [See QR Code Component project](https://sergioguri00.github.io/frontendmentor/qr-code-component-main/)
