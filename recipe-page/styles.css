@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif, system-ui;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--stone-600);
+  width: 100vw;
+  height: fit-content;
+  background-color: var(--stone-100);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: var(--white);
+
+  img {
+    margin: -2rem -2rem 0 -2rem;
+    width: calc(100% + 4rem);
+  }
+}
+
+h1 {
+  font-family: "Young Serif", sans-serif, system-ui;
+  color: var(--stone-900);
+  font-weight: 400;
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: "Young Serif", sans-serif, system-ui;
+  color: var(--brown-800);
+  font-weight: 400;
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 1.5rem;
+
+  li {
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+  }
+}
+
+.preparation-time {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--rose-50);
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  gap: 1rem;
+  color: var(--rose-800);
+
+  h3 {
+    margin: 0;
+  }
+
+  span {
+    color: var(--stone-600);
+  }
+}
+
+.ingredients,
+.instructions {
+  border-bottom: 1px solid var(--stone-150);
+  color: var(--brown-800);
+  font-weight: 700;
+  ul,
+  ol {
+    margin: 1.5rem 0 2rem 0;
+  }
+
+  span {
+    color: var(--stone-600);
+    font-weight: 400;
+  }
+}
+
+.nutrition {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  table {
+    width: 100%;
+
+    tr:first-child {
+      padding: 0 2rem 1rem 2rem;
+    }
+    tr {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid var(--stone-150);
+    }
+  }
+
+  strong {
+    color: var(--brown-800);
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 124px 0;
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    padding: 2.5rem;
+    width: 41rem;
+    border-radius: 20px;
+
+    img {
+      margin: 0;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}
