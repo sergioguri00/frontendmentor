@@ -5,18 +5,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ## Table of contents
 
 - [Overview](#overview)
+  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,9 +23,7 @@ Here is a screenshot of the project.
 ### Links
 
 - [Solution URL](https://github.com/sergioguri00/frontendmentor/tree/main/qr-code-component)
-- [Live Site URL](https://sergioguri00.github.io/frontendmentor/qr-code-component-main/)
-
-## My process
+- [Live Site URL](https://sergioguri00.github.io/frontendmentor/qr-code-component/)
 
 ### Built with
 
@@ -40,5 +32,5 @@ Here is a screenshot of the project.
 
 ## Author
 
-- [My Github profile](https://www.your-site.com)
+- [My Github profile](https://github.com/sergioguri00)
 - Frontend Mentor - [@sergioguri00](https://www.frontendmentor.io/profile/sergioguri00)

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--grey-900);
+  color: var(--white);
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--grey-800);
+  width: 279px;
+  height: 530px;
+  border-radius: 20px;
+  padding: 24px;
+  gap: 24px;
+
+  img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  span {
+    color: var(--green);
+    font-weight: 600;
+  }
+}
+
+.rrss {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+  width: 100%;
+
+  span {
+    background-color: var(--grey-700);
+    padding: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+  }
+
+  span:hover {
+    background-color: var(--green);
+    color: var(--grey-900);
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    width: 304px;
+    padding: 40px;
+  }
+}
