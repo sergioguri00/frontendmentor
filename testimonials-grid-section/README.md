@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/sergioguri00/frontendmentor/tree/main/testimonials-grid-selection)
-- [Live Site URL](https://sergioguri00.github.io/frontendmentor/testimonials-grid-selection/)
+- [Solution URL](https://github.com/sergioguri00/frontendmentor/tree/main/testimonials-grid-section)
+- [Live Site URL](https://sergioguri00.github.io/frontendmentor/testimonials-grid-section/)
 
 ### Built with
 
