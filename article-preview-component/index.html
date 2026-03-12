@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+    <main>
+      <img class="main-img" src="images/drawers.jpg" alt="Drawers image" />
+      <section>
+        <div class="text">
+          <h1>
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </div>
+        <div id="aside" class="inactive-aside">
+          <img
+            id="avatar"
+            src="images/avatar-michelle.jpg"
+            alt="Michelle Appleton avatar"
+            style="display: block"
+          />
+          <span id="span" style="display: none">Share</span>
+          <div id="article-info" style="display: flex">
+            <strong>Michelle Appleton</strong>
+            <sub>28 Jun 2020</sub>
+          </div>
+          <div id="share-icons" style="display: none">
+            <img src="images/icon-facebook.svg" alt="Share with Facebook" />
+            <img src="images/icon-twitter.svg" alt="Share with Twitter" />
+            <img src="images/icon-pinterest.svg" alt="Share with Pinterest" />
+          </div>
+          <button id="share-button" alt="Share">
+            <img id="button-img" src="images/icon-share.svg" alt="Share icon" />
+          </button>
+        </div>
+      </section>
+      <footer>
+        <span id="span">Share</span>
+        <div id="share-icons" style="display: flex">
+          <img src="images/icon-facebook.svg" alt="Share with Facebook" />
+          <img src="images/icon-twitter.svg" alt="Share with Twitter" />
+          <img src="images/icon-pinterest.svg" alt="Share with Pinterest" />
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
