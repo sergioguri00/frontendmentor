@@ -30,7 +30,6 @@ main {
   width: 85%;
   max-width: 320px;
   height: 100%;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 50px 100px #c5d2d7;
@@ -84,12 +83,13 @@ p {
   margin: 0 -2.5em -2.5em -2.5em;
   padding: 1em 2.5em 1.5em 2.5em;
 
-  img {
+  .avatar-img {
     border-radius: 100%;
     width: 3em;
   }
 
-  div {
+  .article-info,
+  .share-icons {
     display: flex;
     flex-direction: column;
     gap: 0.25em;
@@ -128,9 +128,10 @@ p {
   background-color: var(--very-dark-grayish-blue);
   gap: 1.25em;
   margin: 0 -2.5em -2.5em -2.5em;
-  padding: 1em 2.5em 1.5em 2.5em;
+  padding: 1.5em 2.5em 1.5em 2.5em;
   width: calc(100% + 5em);
   height: calc(100% + 4.5em);
+  border-radius: 0 0 10px 10px;
 
   span {
     text-transform: uppercase;
@@ -152,7 +153,6 @@ p {
   button {
     border-radius: 100%;
     border: none;
-    margin-left: auto;
     width: 2em;
     height: 2em;
     background-color: var(--desaturated-dark-blue);
@@ -165,15 +165,72 @@ p {
   }
 }
 
-footer {
-  position: fixed;
-  top: 54%;
-  right: 26%;
-  background-color: red;
+.share {
+  position: relative;
+  margin-left: auto;
+}
+
+.active {
+  button {
+    border-radius: 100%;
+    border: none;
+    width: 2em;
+    height: 2em;
+    background-color: var(--desaturated-dark-blue);
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+dialog {
+  position: absolute;
+  background-color: var(--very-dark-grayish-blue);
   display: flex;
   flex-direction: row;
+  margin-left: auto;
+  align-items: center;
+  gap: 0.75em;
   z-index: 5;
-  padding: 1em;
+  padding: 1.25em 2em;
+  border: none;
+  border-radius: 10px;
+  bottom: 4.5em;
+  left: 50%;
+  transform: translate(-50%);
+
+  span {
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+    letter-spacing: 0.5em;
+    font-size: 0.65em;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+
+    img {
+      width: 1.5em;
+      margin: 0;
+    }
+  }
+}
+
+dialog::after {
+  position: absolute;
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--very-dark-grayish-blue);
+  left: 50%;
+  transform: translate(-50%);
+  top: 3.95em;
 }
 
 @media screen and (min-width: 1440px) {
