@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --red: hsl(4, 100%, 67%);
+  --blue-800: hsl(234, 29%, 20%);
+  --blue-700: hsl(235, 18%, 26%);
+  --grey: hsl(0, 0%, 58%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif, system-ui;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--blue-800);
+  width: 100vw;
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: 700;
+  margin: 0;
+  font-size: 2.5em;
+}
+
+p {
+  margin: 0;
+  line-height: 150%;
+}
+
+.sign-up-start-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 2em;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+  }
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-weight: 700;
+    color: var(--blue-800);
+    font-size: 0.75em;
+  }
+
+  input {
+    margin-top: 0.5em;
+    max-width: 100%;
+    border: 1px solid var(--grey);
+    padding: 1.25em 2em;
+    border-radius: 10px;
+    color: var(--grey);
+    font-size: 1em;
+  }
+
+  button {
+    margin-top: 1.5em;
+    width: 100%;
+    border: none;
+    background-color: var(--blue-800);
+    color: white;
+    padding: 1.25em;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1em;
+  }
+}
+
+.sign-up-end-section {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    gap: 1.5em;
+
+    img {
+      width: 4em;
+      padding-bottom: 1em;
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  button {
+    margin-top: 1.5em;
+    width: 100%;
+    border: none;
+    background-color: var(--blue-800);
+    color: white;
+    padding: 1.25em;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1em;
+  }
+}
