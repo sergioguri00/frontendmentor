@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -18,41 +17,72 @@
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
 
-    </style>
+    <script defer src="main.js"></script>
   </head>
   <body>
-    <img id="sign-up-start-img" src="assets/images/illustration-sign-up-mobile.svg" style="display: none;"/>
-    <section id="sign-up-start" class="sign-up-start-section" style="display: none;">
-      <h1>Stay updated!</h1>
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
-      <div class="info-list">
-        <div>
-          <img src="assets/images/icon-list.svg" />
-          <span>Product discovery and building what matters</span>
-        </div>
-        <div>
-          <img src="assets/images/icon-list.svg" />
-          <span>Measuring to ensure updates area success</span>
-        </div>
-        <div>
-          <img src="assets/images/icon-list.svg" />
-          <span>And much more!</span>
-        </div>
+    <main class="disabled sign-up-start" id="sign-up-start">
+      <img src="assets/images/illustration-sign-up-mobile.svg" />
+      <section class="sign-up-start__section">
+        <h1 class="sign-up-start__h1">Stay updated!</h1>
+        <p class="sign-up-start__paragraph">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="sign-up-start__list">
+          <li class="sign-up-start__list-element">
+            <img src="assets/images/icon-list.svg" />
+            <span>Product discovery and building what matters</span>
+          </li>
+          <li class="sign-up-start__list-element">
+            <img src="assets/images/icon-list.svg" />
+            <span>Measuring to ensure updates area success</span>
+          </li>
+          <li class="sign-up-start__list-element">
+            <img src="assets/images/icon-list.svg" />
+            <span>And much more!</span>
+          </li>
+        </ul>
+        <form class="sign-up-start__form">
+          <div class="sign-up-start__labels">
+            <label class="sign-up-start__label" for="email"
+              >Email address</label
+            >
+            <span id="error-span" class="disabled sign-up-start__error"
+              >Valid email required</span
+            >
+          </div>
+          <input
+            class="sign-up-start__input"
+            placeholder="email@company.com"
+            name="email"
+            id="email-input"
+          />
+          <button
+            id="subscribe-button"
+            class="sign-up-start__button"
+            type="submit"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </section>
+    </main>
+    <main id="sign-up-end" class="enabled sign-up-end">
+      <div class="sign-up-end__div">
+        <img
+          class="sign-up-end__img"
+          src="assets/images/icon-success.svg"
+          alt="Success icon"
+        />
+        <h1 class="sign-up-end__h1">Thanks for subscribing!</h1>
+        <p class="sign-up-end__paragraph">
+          A confirmation email has been sent to
+          <span class="sign-up-end__span" id="email-span"></span>. Please open
+          it and click the button inside to confirm your subscription.
+        </p>
       </div>
-      <form class="email-form">
-        <label for="email">Email address</label>
-        <span></span>
-        <input type="email" placeholder="email@company.com" name="email" />
-        <button type="submit">Subscribe to monthly newsletter</button>
-      </form>
-    </section>
-    <section id="sign-up-end" class="sign-up-end-section" style="display: flex;">
-      <div>
-        <img src="assets/images/icon-success.svg" alt="Success icon" />
-        <h1>Thanks for subscribing!</h1>
-        <p>A confirmation email has been sent to <span>ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription.</p>
-      </div>
-      <button>Dismiss message</button>
-    </section>
+      <button id="dismiss-button" class="sign-up-end__button">
+        Dismiss message
+      </button>
+    </main>
   </body>
 </html>
