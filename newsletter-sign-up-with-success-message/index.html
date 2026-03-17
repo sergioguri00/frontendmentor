@@ -20,8 +20,15 @@
     <script defer src="main.js"></script>
   </head>
   <body>
-    <main class="disabled sign-up-start" id="sign-up-start">
-      <img src="assets/images/illustration-sign-up-mobile.svg" />
+    <main class="enabled sign-up-start" id="sign-up-start">
+      <img
+        class="disabled sign-up-start__img"
+        src="assets/images/illustration-sign-up-mobile.svg"
+      />
+      <img
+        class="sign-up-start__img"
+        src="assets/images/illustration-sign-up-desktop.svg"
+      />
       <section class="sign-up-start__section">
         <h1 class="sign-up-start__h1">Stay updated!</h1>
         <p class="sign-up-start__paragraph">
@@ -66,7 +73,7 @@
         </form>
       </section>
     </main>
-    <main id="sign-up-end" class="enabled sign-up-end">
+    <main id="sign-up-end" class="disabled sign-up-end">
       <div class="sign-up-end__div">
         <img
           class="sign-up-end__img"
